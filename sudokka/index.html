@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 
     <title>Política de Privacidade | Sudokka</title>
 
@@ -21,7 +20,7 @@
       tailwind.config = {
         theme: {
           fontFamily: {
-            sans: ['Nunito', 'sans-serif']
+            sans: ['Rubik', 'sans-serif']
           },
           extend: {
             colors: {
@@ -41,83 +40,124 @@
     </script>
   </head>
 
-  <body class="bg-gradient-to-b from-app-500 to-app-700">
-    <div class="h-screen overflow-y-auto flex flex-col p-5">
-      <header class="flex flex-col items-center gap-10 leading-none pb-5 border-b border-app-300">
-        <div class="flex items-center gap-6">
-          <img src="assets/icon.png" alt="Sudokka logo" class="w-[80px] h-[80px] shadow-md">
-          <h1 class="text-3xl font-black text-secondary-500">Sudokka</h1>
-        </div>
+  <body class="bg-app-300 text-secondary-500 antialiased selection:bg-app-700 selection:text-secondary-500 relative">
+    
+    <div class="min-h-screen py-6 md:py-10 px-4 sm:px-6 flex justify-center">
+      
+      <div class="bg-white max-w-3xl w-full rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-app-500 relative">
+        
+        <header class="relative bg-gradient-to-b from-app-500 to-app-300 px-5 md:px-8 py-10 md:py-12 flex flex-col items-center text-center gap-4 border-b border-app-500">
+          
+          <div class="absolute top-4 left-4 md:top-6 md:left-6">
+            <a href="/" class="inline-flex items-center gap-2 text-sm font-medium text-secondary-500 hover:text-black transition-colors bg-white/40 hover:bg-white/70 px-4 py-2 rounded-full backdrop-blur-sm border border-app-700/50 shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>
+              Início
+            </a>
+          </div>
 
-        <h2 class="text-3xl font-bold text-secondary-300">Política de Privacidade</h2>
-      </header>
-  
-      <main class="flex-1 p-5 flex flex-col gap-[3rem] text-lg max-w-[1200px] mx-auto">
-        <p class="leading-relaxed">
-          Agradecemos por escolher o Sudokka. Nós valorizamos a privacidade
-          dos nossos usuários e estamos empenhados em proteger suas informações pessoais. Esta política
-          de privacidade explica como coletamos, usamos e divulgamos as informações que coletamos do usuário
-          através do nosso aplicativo.
-        </p>
-  
-        <section class="flex flex-col gap-3">
-          <h3 class="font-bold text-xl uppercase">Coleta de informações</h3>
-  
-          <p class="leading-relaxed">
-            O Sudokka não coleta nenhuma informação pessoal dos usuários. No entanto,
-            exibimos anúncios através do Google AdMob para manter o nosso aplicativo gratuito. O Google AdMob
-            coleta automaticamente alguns dados do usuário, como o endereço IP, o tipo de dispositivo e o sistema
-            operacional. Esses dados são usados para exibir anúncios relevantes para o usuário.
+          <div class="flex items-center gap-3 md:gap-4 mt-4 md:mt-0">
+            <img src="assets/icon.png" alt="Sudokka logo" class="w-14 h-14 md:w-16 md:h-16 rounded-2xl shadow-sm bg-white">
+            <h1 class="text-3xl md:text-4xl font-black text-secondary-500 tracking-tight">Sudokka</h1>
+          </div>
+          <h2 class="text-xl md:text-2xl font-medium text-secondary-300">Política de Privacidade</h2>
+        </header>
+
+        <main class="px-5 md:px-8 py-8 md:py-10 flex flex-col gap-8 text-base md:text-lg text-secondary-300">
+          <p class="leading-relaxed text-secondary-500 font-medium">
+            Agradecemos por escolher o Sudokka. Nós valorizamos a privacidade
+            dos nossos usuários e estamos empenhados em proteger suas informações pessoais. Esta política
+            de privacidade explica como coletamos, usamos e divulgamos as informações que coletamos do usuário
+            através do nosso aplicativo.
           </p>
 
-          <p class="leading-relaxed">
-            Para mais detalhes sobre a coleta de dados realizada pelo Google Admob, consulte sua
-            <a class="text-blue-600 underline" href="http://www.google.com/policies/privacy/partners">política de privacidade</a>.
-          </p>
-        </section>
+          <div class="bg-gray-50 rounded-2xl p-5 md:p-6 border border-gray-100 shadow-sm">
+            <h3 class="font-bold text-secondary-500 mb-2 text-base md:text-lg">Nesta página</h3>
+            <ul class="flex flex-col text-sm md:text-base font-medium">
+              <li><a href="#coleta" class="block py-2 text-secondary-300 hover:text-blue-600 transition-colors underline-offset-4 hover:underline">1. Coleta de Informações</a></li>
+              <li><a href="#uso" class="block py-2 text-secondary-300 hover:text-blue-600 transition-colors underline-offset-4 hover:underline">2. Uso de Informações</a></li>
+              <li><a href="#divulgacao" class="block py-2 text-secondary-300 hover:text-blue-600 transition-colors underline-offset-4 hover:underline">3. Divulgação de Informações</a></li>
+              <li><a href="#alteracoes" class="block py-2 text-secondary-300 hover:text-blue-600 transition-colors underline-offset-4 hover:underline">4. Alterações na Política</a></li>
+              <li><a href="#contato" class="block py-2 text-secondary-300 hover:text-blue-600 transition-colors underline-offset-4 hover:underline">5. Contato</a></li>
+            </ul>
+          </div>
 
-        <section class="flex flex-col gap-3">
-          <h3 class="font-bold text-xl uppercase">Uso de informações</h3>
+          <section id="coleta" class="flex flex-col gap-3 scroll-mt-8">
+            <h3 class="font-bold text-lg md:text-xl text-secondary-500 border-b border-gray-100 pb-2">1. Coleta de Informações</h3>
+            <p class="leading-relaxed">
+              O Sudokka não coleta nenhuma informação pessoal dos usuários. No entanto,
+              exibimos anúncios através do Google AdMob para manter o nosso aplicativo gratuito. O Google AdMob
+              coleta automaticamente alguns dados do usuário, como o endereço IP, o tipo de dispositivo e o sistema
+              operacional. Esses dados são usados para exibir anúncios relevantes para o usuário.
+            </p>
+            <p class="leading-relaxed break-words">
+              Para mais detalhes sobre a coleta de dados realizada pelo Google Admob, consulte sua
+              <a class="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 transition-colors" href="http://www.google.com/policies/privacy/partners" target="_blank" rel="noopener noreferrer">política de privacidade</a>.
+            </p>
+          </section>
 
-          <p class="leading-relaxed">
-            As informações coletadas pelo Google AdMob são usadas apenas para exibir anúncios relevantes para
-            o usuário. Não compartilhamos essas informações com terceiros.
-          </p>
-        </section>
+          <section id="uso" class="flex flex-col gap-3 scroll-mt-8">
+            <h3 class="font-bold text-lg md:text-xl text-secondary-500 border-b border-gray-100 pb-2">2. Uso de Informações</h3>
+            <p class="leading-relaxed">
+              As informações coletadas pelo Google AdMob são usadas apenas para exibir anúncios relevantes para
+              o usuário. Não compartilhamos essas informações com terceiros.
+            </p>
+          </section>
 
-        <section class="flex flex-col gap-3">
-          <h3 class="font-bold text-xl uppercase">Divulgação de informações</h3>
+          <section id="divulgacao" class="flex flex-col gap-3 scroll-mt-8">
+            <h3 class="font-bold text-lg md:text-xl text-secondary-500 border-b border-gray-100 pb-2">3. Divulgação de Informações</h3>
+            <p class="leading-relaxed">
+              Não divulgamos as informações coletadas pelo Google AdMob a terceiros, exceto conforme exigido por lei.
+            </p>
+          </section>
 
-          <p class="leading-relaxed">
-            Não divulgamos as informações coletadas pelo Google AdMob a terceiros, exceto conforme exigido por lei.
-          </p>
-        </section>
+          <section id="alteracoes" class="flex flex-col gap-3 scroll-mt-8">
+            <h3 class="font-bold text-lg md:text-xl text-secondary-500 border-b border-gray-100 pb-2">4. Alterações na Política</h3>
+            <p class="leading-relaxed">
+              Podemos atualizar esta política de privacidade de tempos em tempos. As alterações serão refletidas nesta
+              página. Caso haja mudanças nesta política, o usuário será notificado dentro do aplicativo.
+            </p>
+          </section>
 
-        <section class="flex flex-col gap-3">
-          <h3 class="font-bold text-xl uppercase">Alterações na política de privacidade</h3>
-
-          <p class="leading-relaxed">
-            Podemos atualizar esta política de privacidade de tempos em tempos. As alterações serão refletidas nesta
-            página. Caso haja mudanças nesta política de privacidade, o usuário será notificado dentro do aplicativo.
-          </p>
-        </section>
-
-        <section class="flex flex-col gap-3">
-          <h3 class="font-bold text-xl uppercase">Contato</h3>
-
-          <p class="leading-relaxed">
-            Se você tiver alguma dúvida ou preocupação sobre nossa política de privacidade, entre em contato conosco
-            pelo endereço de e-mail
-            <a class="text-blue-600 underline" href="mailto:sudokka@proton.me">sudokka@proton.me</a>.
-          </p>
-        </section>
-
-        <section class="flex flex-col gap-3">
-          <p class="leading-relaxed">
+          <section id="contato" class="flex flex-col gap-3 scroll-mt-8">
+            <h3 class="font-bold text-lg md:text-xl text-secondary-500 border-b border-gray-100 pb-2">5. Contato</h3>
+            <p class="leading-relaxed break-words">
+              Se você tiver alguma dúvida ou preocupação sobre nossa política de privacidade, entre em contato conosco
+              pelo e-mail
+              <a class="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 transition-colors font-medium" href="mailto:sudokka@proton.me">sudokka@proton.me</a>.
+            </p>
+          </section>
+        </main>
+        
+        <footer class="bg-gray-50 px-5 md:px-8 py-6 border-t border-gray-100 text-sm text-center text-secondary-300">
             Última atualização: 17 de abril de 2023
-          </p>
-        </section>        
-      </main>
+        </footer>
+
+      </div>
     </div>
+
+    <button 
+      id="btnTopo" 
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      class="fixed bottom-6 right-6 md:bottom-10 md:right-10 bg-app-700 text-secondary-500 p-3 md:p-4 rounded-full shadow-lg border border-app-500 hover:bg-app-500 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none z-50 focus:outline-none focus:ring-4 focus:ring-app-300"
+      aria-label="Voltar ao topo"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"></path></svg>
+    </button>
+
+    <script>
+      const btnTopo = document.getElementById('btnTopo');
+
+      window.addEventListener('scroll', () => {
+        // Mostra o botão após rolar 300px para baixo
+        if (window.scrollY > 300) {
+          btnTopo.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+          btnTopo.classList.add('opacity-100', 'translate-y-0');
+        } else {
+          // Oculta o botão se estiver no topo
+          btnTopo.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+          btnTopo.classList.remove('opacity-100', 'translate-y-0');
+        }
+      });
+    </script>
   </body>
 </html>
